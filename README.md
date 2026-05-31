@@ -40,9 +40,9 @@ The assembled prototype should look similar to the image below:
 
 Store your project image as:
 
-
-<img width="1280" height="964" alt="project-photo jpg" src="https://github.com/user-attachments/assets/8402a724-0191-415f-816b-2ba31f341326" />
-
+``
+project-photo.jpg
+``
 
 and update the image path if necessary.
 
@@ -56,7 +56,179 @@ docs/arduino_wiring_schematic.svg
 ``
 Preview:
 
-<img width="84" height="150" alt="arduino_wiring_schematic" src="https://github.com/user-attachments/assets/07dc71b0-41d5-41a2-8a8f-c68e4069bc3f" />
+# 🛠️ Схема підключення (Arduino Uno + LCD + PIR + Potentiometer)
+
+Для того щоб переглянути інтерактивну або масштабовану схему прямо на сторінці репозиторію, ви можете скористатися векторною графікою нижче. Вона автоматично адаптується під темну та світлу теми GitHub.
+
+## 📊 Візуальний схематик
+
+<svg viewBox="0 0 860 690" xmlns="http://www.w3.org/2000/svg" style="background: #1a1a2e; border-radius: 8px; width: 100%; max-width: 860px; font-family: Arial, sans-serif;">
+
+  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Arduino Uno — Visual Wiring Schematic</text>
+
+  <rect x="300" y="200" width="260" height="380" rx="10" fill="#1a6b1a" stroke="#4aaa4a" stroke-width="2"/>
+  <text x="430" y="228" text-anchor="middle" font-size="14" font-weight="700" fill="#90ee90">Arduino Uno</text>
+
+  <rect x="355" y="540" width="50" height="30" rx="4" fill="#555" stroke="#999" stroke-width="1.5"/>
+  <rect x="363" y="548" width="34" height="16" rx="2" fill="#333"/>
+  <text x="380" y="582" text-anchor="middle" font-size="10" fill="#aaa">USB</text>
+
+  <rect x="365" y="330" width="70" height="50" rx="3" fill="#111" stroke="#555" stroke-width="1"/>
+  <text x="400" y="360" text-anchor="middle" font-size="9" fill="#888">ATmega328</text>
+
+  <circle cx="300" cy="260" r="5" fill="#888" stroke="#ccc" stroke-width="1"/>
+  <text x="292" y="264" text-anchor="end" font-size="11" font-weight="700" fill="#eee">GND</text>
+
+  <circle cx="300" cy="290" r="5" fill="#e55" stroke="#faa" stroke-width="1"/>
+  <text x="292" y="294" text-anchor="end" font-size="11" font-weight="700" fill="#eee">5V</text>
+
+  <circle cx="300" cy="320" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="324" text-anchor="end" font-size="11" font-weight="700" fill="#eee">3</text>
+
+  <circle cx="300" cy="350" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="354" text-anchor="end" font-size="11" font-weight="700" fill="#eee">4</text>
+
+  <circle cx="300" cy="380" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="384" text-anchor="end" font-size="11" font-weight="700" fill="#eee">5</text>
+
+  <circle cx="300" cy="410" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="414" text-anchor="end" font-size="11" font-weight="700" fill="#eee">6</text>
+
+  <circle cx="300" cy="440" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="444" text-anchor="end" font-size="11" font-weight="700" fill="#eee">7</text>
+
+  <circle cx="560" cy="260" r="5" fill="#888" stroke="#ccc" stroke-width="1"/>
+  <text x="568" y="264" text-anchor="start" font-size="11" font-weight="700" fill="#eee">GND</text>
+
+  <circle cx="560" cy="290" r="5" fill="#e55" stroke="#faa" stroke-width="1"/>
+  <text x="568" y="294" text-anchor="start" font-size="11" font-weight="700" fill="#eee">5V</text>
+
+  <circle cx="560" cy="320" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="568" y="324" text-anchor="start" font-size="11" font-weight="700" fill="#eee">11</text>
+
+  <circle cx="560" cy="350" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="568" y="354" text-anchor="start" font-size="11" font-weight="700" fill="#eee">12</text>
+
+
+  <rect x="30" y="50" width="110" height="90" rx="8" fill="#2a2a5a" stroke="#6666cc" stroke-width="2"/>
+  <ellipse cx="85" cy="75" rx="28" ry="20" fill="#8888dd" stroke="#aaaaff" stroke-width="1.5"/>
+  <ellipse cx="85" cy="75" rx="18" ry="13" fill="#6666cc" opacity="0.6"/>
+  <text x="85" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#aaaaff">PIR Sensor</text>
+  
+  <line x1="60" y1="140" x2="60" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="85" y1="140" x2="85" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="140" x2="110" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <text x="60" y="170" text-anchor="middle" font-size="10" fill="#bbb">GND</text>
+  <text x="85" y="170" text-anchor="middle" font-size="10" fill="#bbb">OUT</text>
+  <text x="110" y="170" text-anchor="middle" font-size="10" fill="#bbb">VCC</text>
+
+
+  <rect x="30" y="420" width="100" height="70" rx="6" fill="#3a2a1a" stroke="#cc8833" stroke-width="2"/>
+  <circle cx="80" cy="455" r="18" fill="#555" stroke="#999" stroke-width="1.5"/>
+  <circle cx="80" cy="455" r="8" fill="#333" stroke="#777" stroke-width="1"/>
+  <line x1="80" y1="437" x2="80" y2="448" stroke="#ccc" stroke-width="2" stroke-linecap="round"/>
+  <text x="80" y="510" text-anchor="middle" font-size="11" font-weight="700" fill="#cc8833">Potentiometer</text>
+  
+  <line x1="45" y1="490" x2="45" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="490" x2="80" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="115" y1="490" x2="115" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <text x="45" y="520" text-anchor="middle" font-size="10" fill="#bbb">5V</text>
+  <text x="80" y="520" text-anchor="middle" font-size="10" fill="#bbb">MID</text>
+  <text x="115" y="520" text-anchor="middle" font-size="10" fill="#bbb">GND</text>
+
+
+  <rect x="600" y="180" width="230" height="160" rx="8" fill="#1a3a1a" stroke="#4aaa4a" stroke-width="2"/>
+  <rect x="612" y="195" width="206" height="110" rx="4" fill="#2255aa" stroke="#4477cc" stroke-width="1.5"/>
+  <rect x="620" y="205" width="190" height="40" rx="2" fill="#1a44aa" opacity="0.6"/>
+  <rect x="620" y="252" width="190" height="40" rx="2" fill="#1a44aa" opacity="0.6"/>
+  
+  <text x="715" y="232" text-anchor="middle" font-family="monospace" font-size="13" fill="#55ffaa" letter-spacing="2">Hello World!</text>
+  <text x="715" y="278" text-anchor="middle" font-family="monospace" font-size="13" fill="#55ffaa" letter-spacing="2">Dist: 42 cm</text>
+  <text x="715" y="360" text-anchor="middle" font-size="13" font-weight="700" fill="#90ee90">LCD 1602</text>
+
+  <line x1="614" y1="340" x2="614" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="628" y1="340" x2="628" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="642" y1="340" x2="642" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="656" y1="340" x2="656" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="670" y1="340" x2="670" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="684" y1="340" x2="684" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="698" y1="340" x2="698" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="712" y1="340" x2="712" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="726" y1="340" x2="726" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="740" y1="340" x2="740" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="754" y1="340" x2="754" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="768" y1="340" x2="768" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="782" y1="340" x2="782" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="796" y1="340" x2="796" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="810" y1="340" x2="810" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="824" y1="340" x2="824" y2="360" stroke="#888" stroke-width="2"/>
+
+  <text x="614" y="374" text-anchor="middle" font-size="9" fill="#aaa">1</text>
+  <text x="628" y="374" text-anchor="middle" font-size="9" fill="#aaa">2</text>
+  <text x="642" y="374" text-anchor="middle" font-size="9" fill="#aaa">3</text>
+  <text x="656" y="374" text-anchor="middle" font-size="9" fill="#aaa">4</text>
+  <text x="670" y="374" text-anchor="middle" font-size="9" fill="#aaa">5</text>
+  <text x="684" y="374" text-anchor="middle" font-size="9" fill="#aaa">6</text>
+  <text x="726" y="374" text-anchor="middle" font-size="9" fill="#aaa">11</text>
+  <text x="740" y="374" text-anchor="middle" font-size="9" fill="#aaa">12</text>
+  <text x="754" y="374" text-anchor="middle" font-size="9" fill="#aaa">13</text>
+  <text x="768" y="374" text-anchor="middle" font-size="9" fill="#aaa">14</text>
+  <text x="782" y="374" text-anchor="middle" font-size="9" fill="#aaa">15</text>
+  <text x="796" y="374" text-anchor="middle" font-size="9" fill="#aaa">16</text>
+
+
+  <path d="M60 155 L60 185 L180 185 L180 260 L300 260" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M110 155 L110 195 L185 195 L185 290 L300 290" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M85 155 L85 200 L175 200 L175 440 L300 440" fill="none" stroke="#ff8800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 505 L45 555 L190 555 L190 290 L300 290" fill="none" stroke="#ff4444" stroke-width="2" stroke-dasharray="6 3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M115 505 L115 565 L195 565 L195 260 L300 260" fill="none" stroke="#888888" stroke-width="2" stroke-dasharray="6 3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 505 L80 590 L642 590 L642 360" fill="none" stroke="#aa44ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 260 L580 260 L580 380 L614 380 L614 360" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 290 L584 290 L584 385 L628 385 L628 360" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 350 L590 350 L590 395 L656 395 L656 360" fill="none" stroke="#ff8800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 260 L576 260 L576 400 L670 400 L670 360" fill="none" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 320 L594 320 L594 405 L684 405 L684 360" fill="none" stroke="#44cc44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 380 L270 380 L270 410 L726 410 L726 360" fill="none" stroke="#00cccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 350 L265 350 L265 415 L740 415 L740 360" fill="none" stroke="#9955ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 320 L260 320 L260 420 L754 420 L754 360" fill="none" stroke="#cccc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 410 L255 410 L255 425 L768 425 L768 360" fill="none" stroke="#ff55aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 290 L598 290 L598 430 L782 430 L782 360" fill="none" stroke="#ff4444" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M560 260 L602 260 L602 435 L796 435 L796 360" fill="none" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+  <line x1="30" y1="615" x2="830" y2="615" stroke="#333" stroke-width="1"/>
+
+  <rect x="50" y="630" width="20" height="6" rx="3" fill="#ff4444"/>
+  <text x="78" y="637" font-size="12" font-weight="600" fill="#ccc">Red — 5V</text>
+
+  <rect x="250" y="630" width="20" height="6" rx="3" fill="#888888"/>
+  <text x="278" y="637" font-size="12" font-weight="600" fill="#ccc">Gray — GND</text>
+
+  <rect x="450" y="630" width="20" height="6" rx="3" fill="#ff8800"/>
+  <text x="478" y="637" font-size="12" font-weight="600" fill="#ccc">Orange — Data</text>
+
+  <rect x="650" y="630" width="20" height="6" rx="3" fill="#aa44ff"/>
+  <text x="678" y="637" font-size="12" font-weight="600" fill="#ccc">Purple — Contrast</text>
+
+  <rect x="50" y="660" width="20" height="6" rx="3" fill="#44cc44"/>
+  <text x="78" y="667" font-size="12" font-weight="600" fill="#ccc">Green — EN/D4</text>
+
+  <rect x="250" y="660" width="20" height="6" rx="3" fill="#00cccc"/>
+  <text x="278" y="667" font-size="12" font-weight="600" fill="#ccc">Cyan — D4</text>
+
+  <rect x="450" y="660" width="20" height="6" rx="3" fill="#9955ff"/>
+  <text x="478" y="667" font-size="12" font-weight="600" fill="#ccc">Violet — D5</text>
+
+  <rect x="650" y="660" width="20" height="6" rx="3" fill="#ff55aa"/>
+  <text x="678" y="667" font-size="12" font-weight="600" fill="#ccc">Pink — D7</text>
+
+</svg>
+
+## 🔌 Опис підключення компонентів
+
+* **PIR Датчик**: Живлення йде на `5V` та `GND`, а вихідний сигнал (`OUT`) підключено до цифрового піна `7`.
+* **Потенціометр**: Крайні контакти підключені до шин живлення, а середній (`MID`) регулює контрастність LCD екрана (пін `3`).
+* **LCD 1602**: Підключено за класичною 4-бітною схемою до пінів `3`, `4`, `5`, `6`, `11`, `12` платформи Arduino.
 
 The schematic illustrates the connections between:
 
