@@ -57,12 +57,6 @@ docs/arduino_wiring_schematic.svg
 or you can use this schema:
 ![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
 
-## 🔌 Опис підключення компонентів
-
-* **PIR Датчик**: Живлення йде на `5V` та `GND`, а вихідний сигнал (`OUT`) підключено до цифрового піна `7`.
-* **Потенціометр**: Крайні контакти підключені до шин живлення, а середній (`MID`) регулює контрастність LCD екрана (пін `3`).
-* **LCD 1602**: Підключено за класичною 4-бітною схемою до пінів `3`, `4`, `5`, `6`, `11`, `12` платформи Arduino.
-
 The schematic illustrates the connections between:
 
 * Arduino Uno
