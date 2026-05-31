@@ -54,9 +54,10 @@ A complete wiring schematic for the project is included in the repository:
 ``text
 docs/arduino_wiring_schematic.svg
 ``
-``Preview:
+or you can use this schema:
+``Preview:``
 ![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
-``
+
 ## 🔌 Опис підключення компонентів
 
 * **PIR Датчик**: Живлення йде на `5V` та `GND`, а вихідний сигнал (`OUT`) підключено до цифрового піна `7`.
