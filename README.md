@@ -41,7 +41,7 @@ The assembled prototype should look similar to the image below:
 Store your project image as:
 
 ```text
-docs/project-photo.jpg
+<img width="1280" height="964" alt="project-photo jpg" src="https://github.com/user-attachments/assets/8402a724-0191-415f-816b-2ba31f341326" />
 ```
 
 and update the image path if necessary.
@@ -53,12 +53,11 @@ A complete wiring schematic for the project is included in the repository:
 
 ```text
 docs/arduino_wiring_schematic.svg
-```
 
 Preview:
 
 ```markdown
-![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
+<img width="84" height="150" alt="arduino_wiring_schematic" src="https://github.com/user-attachments/assets/07dc71b0-41d5-41a2-8a8f-c68e4069bc3f" />
 ```
 
 The schematic illustrates the connections between:
