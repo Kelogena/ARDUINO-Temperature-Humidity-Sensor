@@ -52,13 +52,13 @@ and update the image path if necessary.
 A complete wiring schematic for the project is included in the repository:
 
 ```text
-docs/arduino_wiring_schematic
+docs/arduino_wiring_schematic.svg
 ```
 
 Preview:
 
 ```markdown
-![Arduino Wiring Schematic](docs/arduino_wiring_schematic)
+![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
 ```
 
 The schematic illustrates the connections between:
