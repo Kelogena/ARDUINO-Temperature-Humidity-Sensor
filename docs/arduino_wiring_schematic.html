@@ -1,0 +1,230 @@
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.wrap { padding: 16px; background: #1a1a2e; min-height: 400px; }
+svg { width: 100%; display: block; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+}
+
+.leg-row { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; padding:12px 0 0; }
+.leg-item { display:flex; align-items:center; gap:6px; }
+.leg-swatch { width:28px; height:5px; border-radius:3px; }
+.leg-txt { font-size:12px; font-weight:600; color:#ccc; }
+</style>
+
+<div class="wrap">
+<svg viewBox="0 0 860 620" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ===== BACKGROUND LABELS ===== -->
+  <text x="430" y="22" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#aaa">Arduino Uno — Visual Wiring</text>
+
+  <!-- ===================== ARDUINO UNO BOARD ===================== -->
+  <!-- Board body -->
+  <rect x="300" y="200" width="260" height="380" rx="10" fill="#1a6b1a" stroke="#4aaa4a" stroke-width="2"/>
+  <!-- Board label -->
+  <text x="430" y="228" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#90ee90">Arduino Uno</text>
+
+  <!-- USB port shape -->
+  <rect x="355" y="540" width="50" height="30" rx="4" fill="#555" stroke="#999" stroke-width="1.5"/>
+  <rect x="363" y="548" width="34" height="16" rx="2" fill="#333"/>
+  <text x="380" y="582" text-anchor="middle" font-family="Arial" font-size="10" fill="#aaa">USB</text>
+
+  <!-- IC chip -->
+  <rect x="365" y="330" width="70" height="50" rx="3" fill="#111" stroke="#555" stroke-width="1"/>
+  <text x="400" y="360" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">ATmega328</text>
+
+  <!-- Left pin header (GND, 5V, Pin3-7) -->
+  <!-- Pin dots on left edge -->
+  <!-- GND y=260 -->
+  <circle cx="300" cy="260" r="5" fill="#888" stroke="#ccc" stroke-width="1"/>
+  <text x="292" y="264" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">GND</text>
+
+  <!-- 5V y=290 -->
+  <circle cx="300" cy="290" r="5" fill="#e55" stroke="#faa" stroke-width="1"/>
+  <text x="292" y="294" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">5V</text>
+
+  <!-- Pin 3 y=320 -->
+  <circle cx="300" cy="320" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="324" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">3</text>
+
+  <!-- Pin 4 y=350 -->
+  <circle cx="300" cy="350" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="354" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">4</text>
+
+  <!-- Pin 5 y=380 -->
+  <circle cx="300" cy="380" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="384" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">5</text>
+
+  <!-- Pin 6 y=410 -->
+  <circle cx="300" cy="410" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="414" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">6</text>
+
+  <!-- Pin 7 y=440 -->
+  <circle cx="300" cy="440" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="292" y="444" text-anchor="end" font-family="Arial" font-size="11" font-weight="700" fill="#eee">7</text>
+
+  <!-- Right pin header (GND, 5V, Pin11, Pin12) -->
+  <!-- GND y=260 -->
+  <circle cx="560" cy="260" r="5" fill="#888" stroke="#ccc" stroke-width="1"/>
+  <text x="568" y="264" text-anchor="start" font-family="Arial" font-size="11" font-weight="700" fill="#eee">GND</text>
+
+  <!-- 5V y=290 -->
+  <circle cx="560" cy="290" r="5" fill="#e55" stroke="#faa" stroke-width="1"/>
+  <text x="568" y="294" text-anchor="start" font-family="Arial" font-size="11" font-weight="700" fill="#eee">5V</text>
+
+  <!-- Pin 11 y=320 -->
+  <circle cx="560" cy="320" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="568" y="324" text-anchor="start" font-family="Arial" font-size="11" font-weight="700" fill="#eee">11</text>
+
+  <!-- Pin 12 y=350 -->
+  <circle cx="560" cy="350" r="5" fill="#aaa" stroke="#eee" stroke-width="1"/>
+  <text x="568" y="354" text-anchor="start" font-family="Arial" font-size="11" font-weight="700" fill="#eee">12</text>
+
+
+  <!-- ===================== PIR SENSOR ===================== -->
+  <!-- Body -->
+  <rect x="30" y="50" width="110" height="90" rx="8" fill="#2a2a5a" stroke="#6666cc" stroke-width="2"/>
+  <!-- Dome -->
+  <ellipse cx="85" cy="75" rx="28" ry="20" fill="#8888dd" stroke="#aaaaff" stroke-width="1.5"/>
+  <ellipse cx="85" cy="75" rx="18" ry="13" fill="#6666cc" opacity="0.6"/>
+  <text x="85" y="128" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#aaaaff">PIR Sensor</text>
+  <!-- 3 pins at bottom -->
+  <line x1="60" y1="140" x2="60" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="85" y1="140" x2="85" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="140" x2="110" y2="155" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <text x="60" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">GND</text>
+  <text x="85" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">OUT</text>
+  <text x="110" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">VCC</text>
+
+
+  <!-- ===================== POTENTIOMETER ===================== -->
+  <!-- Body -->
+  <rect x="30" y="420" width="100" height="70" rx="6" fill="#3a2a1a" stroke="#cc8833" stroke-width="2"/>
+  <!-- Knob -->
+  <circle cx="80" cy="455" r="18" fill="#555" stroke="#999" stroke-width="1.5"/>
+  <circle cx="80" cy="455" r="8" fill="#333" stroke="#777" stroke-width="1"/>
+  <line x1="80" y1="437" x2="80" y2="448" stroke="#ccc" stroke-width="2" stroke-linecap="round"/>
+  <text x="80" y="510" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#cc8833">Potentiometer</text>
+  <!-- 3 pins -->
+  <line x1="45" y1="490" x2="45" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="490" x2="80" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <line x1="115" y1="490" x2="115" y2="505" stroke="#888" stroke-width="3" stroke-linecap="round"/>
+  <text x="45" y="520" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">5V</text>
+  <text x="80" y="520" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">MID</text>
+  <text x="115" y="520" text-anchor="middle" font-family="Arial" font-size="10" fill="#bbb">GND</text>
+
+
+  <!-- ===================== LCD 1602 ===================== -->
+  <!-- PCB -->
+  <rect x="600" y="180" width="230" height="160" rx="8" fill="#1a3a1a" stroke="#4aaa4a" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="612" y="195" width="206" height="110" rx="4" fill="#2255aa" stroke="#4477cc" stroke-width="1.5"/>
+  <!-- Character cells rows -->
+  <rect x="620" y="205" width="190" height="40" rx="2" fill="#1a44aa" opacity="0.6"/>
+  <rect x="620" y="252" width="190" height="40" rx="2" fill="#1a44aa" opacity="0.6"/>
+  <!-- Fake text chars row 1 -->
+  <text x="715" y="232" text-anchor="middle" font-family="Courier New" font-size="13" fill="#55ffaa" letter-spacing="2">Hello World!</text>
+  <text x="715" y="278" text-anchor="middle" font-family="Courier New" font-size="13" fill="#55ffaa" letter-spacing="2">Dist: 42 cm</text>
+  <text x="715" y="360" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#90ee90">LCD 1602</text>
+
+  <!-- 16 pins at bottom of LCD -->
+  <line x1="614" y1="340" x2="614" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="628" y1="340" x2="628" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="642" y1="340" x2="642" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="656" y1="340" x2="656" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="670" y1="340" x2="670" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="684" y1="340" x2="684" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="698" y1="340" x2="698" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="712" y1="340" x2="712" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="726" y1="340" x2="726" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="740" y1="340" x2="740" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="754" y1="340" x2="754" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="768" y1="340" x2="768" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="782" y1="340" x2="782" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="796" y1="340" x2="796" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="810" y1="340" x2="810" y2="360" stroke="#888" stroke-width="2"/>
+  <line x1="824" y1="340" x2="824" y2="360" stroke="#888" stroke-width="2"/>
+  <!-- Pin labels -->
+  <text x="614" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">1</text>
+  <text x="628" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">2</text>
+  <text x="642" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">3</text>
+  <text x="656" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">4</text>
+  <text x="670" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">5</text>
+  <text x="684" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">6</text>
+  <text x="726" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">11</text>
+  <text x="740" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">12</text>
+  <text x="754" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">13</text>
+  <text x="768" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">14</text>
+  <text x="782" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">15</text>
+  <text x="796" y="374" text-anchor="middle" font-family="Arial" font-size="9" fill="#aaa">16</text>
+
+
+  <!-- ===================== WIRES ===================== -->
+
+  <!-- PIR GND (pin 60,155) → Arduino GND left (300,260) — BLACK -->
+  <path d="M60 155 L60 185 L180 185 L180 260 L300 260" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- PIR VCC (110,155) → Arduino 5V left (300,290) — RED -->
+  <path d="M110 155 L110 195 L185 195 L185 290 L300 290" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- PIR OUT (85,155) → Arduino Pin7 (300,440) — ORANGE -->
+  <path d="M85 155 L85 200 L175 200 L175 440 L300 440" fill="none" stroke="#ff8800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- POT Left/5V (45,505) → Arduino 5V left (300,290) — RED dashed -->
+  <path d="M45 505 L45 555 L190 555 L190 290 L300 290" fill="none" stroke="#ff4444" stroke-width="2" stroke-dasharray="6 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- POT GND (115,505) → Arduino GND left (300,260) — BLACK dashed -->
+  <path d="M115 505 L115 565 L195 565 L195 260 L300 260" fill="none" stroke="#888888" stroke-width="2" stroke-dasharray="6 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- POT MID (80,505) → LCD P3 (642,360) — PURPLE -->
+  <path d="M80 505 L80 590 L642 590 L642 360" fill="none" stroke="#aa44ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino GND right (560,260) → LCD P1 (614,360) — BLACK -->
+  <path d="M560 260 L580 260 L580 380 L614 380 L614 360" fill="none" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino 5V right (560,290) → LCD P2 (628,360) — RED -->
+  <path d="M560 290 L584 290 L584 385 L628 385 L628 360" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin12 right (560,350) → LCD P4 (656,360) — ORANGE -->
+  <path d="M560 350 L590 350 L590 395 L656 395 L656 360" fill="none" stroke="#ff8800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino GND right (560,260) → LCD P5 (670,360) — BLACK -->
+  <path d="M560 260 L576 260 L576 400 L670 400 L670 360" fill="none" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin11 right (560,320) → LCD P6 (684,360) — GREEN -->
+  <path d="M560 320 L594 320 L594 405 L684 405 L684 360" fill="none" stroke="#44cc44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin5 left (300,380) → LCD P11 (726,360) — CYAN -->
+  <path d="M300 380 L270 380 L270 410 L726 410 L726 360" fill="none" stroke="#00cccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin4 left (300,350) → LCD P12 (740,360) — VIOLET -->
+  <path d="M300 350 L265 350 L265 415 L740 415 L740 360" fill="none" stroke="#9955ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin3 left (300,320) → LCD P13 (754,360) — YELLOW -->
+  <path d="M300 320 L260 320 L260 420 L754 420 L754 360" fill="none" stroke="#cccc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino Pin6 left (300,410) → LCD P14 (768,360) — PINK -->
+  <path d="M300 410 L255 410 L255 425 L768 425 L768 360" fill="none" stroke="#ff55aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino 5V right (560,290) → LCD P15 (782,360) — RED dashed -->
+  <path d="M560 290 L598 290 L598 430 L782 430 L782 360" fill="none" stroke="#ff4444" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arduino GND right (560,260) → LCD P16 (796,360) — BLACK dashed -->
+  <path d="M560 260 L602 260 L602 435 L796 435 L796 360" fill="none" stroke="#888888" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+
+<!-- Legend -->
+<div class="leg-row">
+  <div class="leg-item"><div class="leg-swatch" style="background:#ff4444"></div><span class="leg-txt">Red — 5V</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#888888"></div><span class="leg-txt">Gray — GND</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#ff8800"></div><span class="leg-txt">Orange — data</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#aa44ff"></div><span class="leg-txt">Purple — contrast</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#44cc44"></div><span class="leg-txt">Green — EN/D4</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#00cccc"></div><span class="leg-txt">Cyan — D4</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#9955ff"></div><span class="leg-txt">Violet — D5</span></div>
+  <div class="leg-item"><div class="leg-swatch" style="background:#ff55aa"></div><span class="leg-txt">Pink — D7</span></div>
+</div>
+</div>
