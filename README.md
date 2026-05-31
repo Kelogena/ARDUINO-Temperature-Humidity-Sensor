@@ -52,13 +52,13 @@ and update the image path if necessary.
 A complete wiring schematic for the project is included in the repository:
 
 ```text
-docs/arduino_wiring_schematic.svg
+docs/arduino_wiring_schematic
 ```
 
 Preview:
 
 ```markdown
-![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
+![Arduino Wiring Schematic](docs/arduino_wiring_schematic)
 ```
 
 The schematic illustrates the connections between:
@@ -226,8 +226,6 @@ arduino-temperature-humidity-monitor/
 │   └── arduino_wiring_schematic.svg
 │
 ├── README.md
-├── LICENSE
-└── .gitignore
 ```
 
 ---
