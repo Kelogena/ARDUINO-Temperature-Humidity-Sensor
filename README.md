@@ -55,7 +55,6 @@ A complete wiring schematic for the project is included in the repository:
 docs/arduino_wiring_schematic.svg
 ``
 or you can use this schema:
-``Preview:``
 ![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
 
 ## 🔌 Опис підключення компонентів
