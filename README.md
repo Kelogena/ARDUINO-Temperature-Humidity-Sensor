@@ -47,6 +47,29 @@ docs/project-photo.jpg
 and update the image path if necessary.
 
 ---
+## 📐 Wiring Schematic
+
+A complete wiring schematic for the project is included in the repository:
+
+```text
+docs/arduino_wiring_schematic.svg
+```
+
+Preview:
+
+```markdown
+![Arduino Wiring Schematic](docs/arduino_wiring_schematic.svg)
+```
+
+The schematic illustrates the connections between:
+
+* Arduino Uno
+* LCD 1602 Display
+* Temperature & Humidity Sensor
+* 10kΩ Potentiometer
+* Power (5V) and GND rails
+
+Use the schematic together with the wiring tables below when assembling the circuit.
 
 ## 🔌 Wiring Instructions
 
@@ -199,7 +222,8 @@ arduino-temperature-humidity-monitor/
 │   └── temperature_humidity_monitor.ino
 │
 ├── docs/
-│   └── project-photo.jpg
+│   ├── project-photo.jpg
+│   └── arduino_wiring_schematic.svg
 │
 ├── README.md
 ├── LICENSE
