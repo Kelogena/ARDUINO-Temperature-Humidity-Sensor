@@ -38,14 +38,6 @@ The assembled prototype should look similar to the image below:
 * Breadboard
 * Potentiometer for LCD contrast adjustment
 
-Store your project image as:
-
-``
-project-photo.jpg
-``
-
-and update the image path if necessary.
-
 ---
 ## 📐 Wiring Schematic
 
