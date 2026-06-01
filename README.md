@@ -272,4 +272,4 @@ Distributed under the MIT License.
 
 ## 👨‍💻 Author
 
-Created as an Arduino temperature and humidity monitoring project using an LCD 1602 display and Arduino Uno.
+Kelogena
